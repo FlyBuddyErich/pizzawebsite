@@ -1,0 +1,159 @@
+body {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    padding: 0 15px;
+    width: 750px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  .landing-page header {
+    min-height: 80px;
+    display: flex;
+  }
+  
+  @media (max-width: 767px) {
+    .landing-page header {
+      min-height: auto;
+      display: initial;
+    }
+  }
+  
+  .landing-page header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 767px) {
+    .landing-page header .container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  .landing-page header .logo {
+    color: #ff3333;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    .landing-page header .logo {
+      margin: 20px 0;
+    }
+  }
+  
+  .landing-page header .links {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 767px) {
+    .landing-page header .links {
+      text-align: center;
+      gap: 10px;
+    }
+  }
+  
+  .landing-page header .links li {
+    margin-left: 30px;
+    color: #ff3333;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Young Serif', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid #ff3333;
+    border-radius: 50px;
+  }
+  
+  .landing-page header .links li:not(:last-child):hover {
+    color: #fff;
+    background-color: #ff3333;
+  }
+  
+  .landing-page .content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 140px;
+    min-height: calc(100vh - 80px);
+  }
+  
+  @media (max-width: 767px) {
+    .landing-page .content .container {
+      gap: 0;
+      min-height: calc(100vh - 101px);
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .landing-page .content .info {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .landing-page .content .info h1 {
+    color: #ff3333;
+    font-size: 44px;
+  }
+  
+  .landing-page .content .info p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #ff3333;
+  }
+  
+  .landing-page .content .info button {
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    width: 150px;
+    color: #fff;
+    background-color: #ff5555;
+  }
+  
+  .landing-page header .links li:hover {
+    color: #fff;
+    background-color: #ff3333;
+  }
+
